@@ -1,0 +1,51 @@
+/* Here I added some basic css for header section */
+.banner-image {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-position: right;
+    background-size: contain;
+    padding-left: 200px; 
+}
+
+.banner-text {
+    max-width: 50%; 
+}
+
+.banner-text h1 {
+    margin-bottom: 20px; 
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* This the media Query for making the nav bar responsive */
+@media (max-width: 1200px) {
+    .banner-image {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        background-position: center;
+        background-size: cover;
+        padding-left: 0; 
+        height: 500px; 
+    }
+
+    .banner-text {
+        max-width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .banner-text h1, .banner-text p {
+        margin: 10px 0;
+    }
+}
+

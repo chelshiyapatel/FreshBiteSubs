@@ -1,0 +1,95 @@
+/* Here I added some basic CSS for detailed page */
+.details-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.details-page h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details-section {
+    margin-bottom: 20px;
+}
+  
+.details-section {
+    margin-bottom: 20px;
+}
+  
+.details-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-section input[type="radio"],
+.details-section input[type="checkbox"],
+.details-section input[type="number"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.grid-item input[type="number"] {
+    margin-top: 10px;
+    width: 40px; 
+    padding: 3px; 
+    text-align: center;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .grid-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid-item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0 ,0, 0.1);
+  }
+  
+  .grid-item input[type="radio"] {
+    margin-bottom: 10px;
+  }
+
+  .grid-item label {
+    margin-left: 10px; 
+  }
+
+  .add-to-cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+  
+  .add-to-cart button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-variant: petite-caps;
+    font-weight: 700;
+  }
+  
+  .add-to-cart button:hover {
+    background-color: #444;
+  }

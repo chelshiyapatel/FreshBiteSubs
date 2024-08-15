@@ -1,0 +1,58 @@
+/* Here I added Css for nav bar */
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo img {
+    height: 70px; 
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+.nav-item {
+    margin-left: 20px; 
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #333; 
+}
+
+/* This the media Query for making the nav bar responsive */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        margin-top: 10px; 
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,128 @@
+/* Here I added the CSS for signup page */
+.signup-page {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding-left: 15%;
+  }
+  
+  .signup-box {
+    background-color: rgba(77, 57, 57, 0.8); 
+    padding: 20px;
+    border: 2px solid #fff; 
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    z-index: 2; 
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 20px;
+    color: #fff; 
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; 
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #444; 
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    color: #fff; 
+  }
+  
+  .login-link a {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+
+  /* This the media Query for making the nav bar responsive */
+@media (max-width: 768px) {
+  .signup-box {
+    padding: 15px;
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+  
+  .signup-box h2 {
+    font-size: 24px;
+  }
+  
+  .login-link a {
+    font-size: 20px;
+  }
+
+  .signup-page {
+    padding-left: 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-box {
+    padding: 10px;
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+
+  .signup-box h2 {
+    font-size: 20px;
+  }
+
+  .input-group input,
+  .input-group select {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .login-link a {
+    font-size: 18px;
+  }
+
+  .signup-page {
+    padding-left: 0%;
+  }
+}

@@ -1,0 +1,129 @@
+/* Here I added the CSS for login page */
+.login-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  padding-left: 15%;
+}
+
+.login-box {
+  background-color: rgb(77 57 57 / 80%);
+  padding: 20px;
+  border: 2px solid #fff; 
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  z-index: 2; 
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff; 
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444; 
+}
+
+.signup-link {
+  margin-top: 20px;
+  color: #fff; 
+}
+
+.signup-link a {
+  color: rgb(0, 132, 255);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* This the media Query for making the nav bar responsive */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 15px;
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+  
+  .login-box h2 {
+    font-size: 24px;
+  }
+  
+  .signup-link a {
+    font-size: 20px;
+  }
+
+  .login-page {
+    padding-left: 0%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 10px;
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+
+  .login-box h2 {
+    font-size: 20px;
+  }
+
+  .input-group input,
+  .input-group select {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .signup-link a {
+    font-size: 18px;
+  }
+
+  .login-page {
+    padding-left: 0%;
+  }
+}

@@ -1,0 +1,150 @@
+/* Here I added some basic CSS for home page */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddddd;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-variant: small-caps;
+    font-style: oblique;
+  }
+  
+  .menu-heading {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .categories button {
+    background-color: #0b0f14;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px; 
+    margin: 0 15px; 
+    cursor: pointer;
+    font-size: 20px;
+    font-variant: petite-caps;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .categories button:hover {
+    background-color: #576069;
+  }
+  
+  .subs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    width: 1000px;
+  }
+  
+  .menu-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(to bottom, #444, #ddd);
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .menu-item-content {
+    padding: 15px;
+  }
+  
+  .menu-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .menu-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #414040;
+  }
+  
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quantity button {
+    background-color: #7f8b98;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin:  10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .quantity button:hover {
+    background-color: #0056b3;
+  }
+
+  .button {
+    border: 10px;
+    border-radius: 5px;
+    /* height: 40px; */
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-variant: petite-caps;
+    font-weight: 700;
+  }
+
+  /* Here I added media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .subs {
+      width: 90%; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .subs {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    }
+  
+    .categories {
+      flex-wrap: wrap; 
+    }
+  
+    .categories button {
+      margin: 5px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
